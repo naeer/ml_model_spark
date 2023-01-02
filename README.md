@@ -25,3 +25,14 @@ to find valuable insights.
 4. Machine Learning Model: After the data has been cleaned and prepared for analysis, it is then
 cleaned and prepared for modelling. Once it has been prepared, two machine learning models, namely Linear Regression and Decision Tree Regression, are applied to predict the total fare amount of each trip.
 
+## ML models
+Two machine learning models, namely Linear Regression and Decision Tree Regression, were applied to the combined data of the yellow and green taxis to predict the total amount charged to the customer for each trip.
+
+The data was split into train and test sets. 75% of the data were randomly taken in the train set and the rest 25% were taken in the test set.
+
+| Model | RMSE (train set) | RMSE (test set) |
+| --- | --- | --- |
+| Linear Regression | 145.321 | 175.827  |
+| Decision Tree Regression | 145.316| 175.824 |
+
+Both linear regression and decision tree regression did similarly well in terms of predicting the target variable as they had similar root mean squared error in both the train and test sets. However, the linear regression model took one-third the time of the decision tree regression model to fit the model to the data. 
