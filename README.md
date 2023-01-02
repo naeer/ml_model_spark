@@ -3,6 +3,10 @@
 ## Overview
 The New York Taxi and Limousine Commission (TLC) is an agency created in 1971 with the responsibility of licensing and regulating New York City’s taxi cabs along with for-hire vehicles, commuter vans and paratransit vehicles. Since 2009, TLC has been publishing trip records for these vehicles, which now equate to millions of rows of trip records. The aim of this project is to take the dataset for both yellow and green taxi cabs from January 2019 to April 2022 and analyse it and finally build a machine learning model to predict the total fare amount of each trip.
 
+## Project Structure
+- BDE_AT_2_Notebook_1.ipynb : Contains code for the data ingestion, preparation and data analysis
+- BDE_AT_2_Notebook_2_Modelling.ipynb : Contains code for the linear regression and decision tree regression models
+
 ## Data Understanding
 Yellow taxi cabs are those traditional iconic taxi cabs on the streets of New York city that can be hailed from anywhere in the city. They are allowed to respond to a street hail from a passenger in all of the five boroughs.
 
@@ -35,4 +39,4 @@ The data was split into train and test sets. 75% of the data were randomly taken
 | Linear Regression | 145.321 | 175.827  |
 | Decision Tree Regression | 145.316| 175.824 |
 
-Both linear regression and decision tree regression did similarly well in terms of predicting the target variable as they had similar root mean squared error in both the train and test sets. However, the linear regression model took one-third the time of the decision tree regression model to fit the model to the data. 
+Both linear regression and decision tree regression did similarly well in terms of predicting the target variable as they had similar root mean squared error in both the train and test sets. However, the linear regression model took one-third the time of the decision tree regression model to fit the model to the data. So, in overall, the linear regression model performed better in modelling the New York TLC data. 
